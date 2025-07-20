@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants\DifficultyLevel.cs" />
+    <Compile Include="Constants\DIFFICULTY_LEVEL.cs" />
     <Compile Include="Constants\GAME_STATE.cs" />
     <Compile Include="Constants\PLAYER_TYPES.cs" />
     <Compile Include="Constants\SYMBOLS.cs" />
     <Compile Include="Controllers\GameController.cs" />
+    <Compile Include="Strategies\MediumPlayingStrategy.cs" />
     <Compile Include="Strategies\EasyPlayingStrategy.cs" />
     <Compile Include="Models\BotPlayer.cs" />
     <Compile Include="Factory\PlayingStrategyFactory.cs" />

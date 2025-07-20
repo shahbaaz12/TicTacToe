@@ -15,7 +15,7 @@ namespace TicTacToe.Factory
         private string name;
         private PLAYER_TYPES pt;
         private SYMBOLS sym;
-        private DifficultyLevel dff;
+        private DIFFICULTY_LEVEL dff;
 
         private PlayerBuilder() { }
 
@@ -47,7 +47,7 @@ namespace TicTacToe.Factory
             return this;
         }
 
-        public PlayerBuilder SetDifficultyIfBot(DifficultyLevel difficulty)
+        public PlayerBuilder SetDifficultyIfBot(DIFFICULTY_LEVEL difficulty)
         {
             this.dff = difficulty;
             return this;

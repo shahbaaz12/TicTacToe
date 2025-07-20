@@ -8,11 +8,15 @@ namespace TicTacToe.Factory
     {
          
 
-        internal static PlayingStragegy GetPlayingDifficulty(DifficultyLevel difficultyLevel)
+        internal static PlayingStragegy GetPlayingDifficulty(DIFFICULTY_LEVEL difficultyLevel)
         {
-            if(difficultyLevel == DifficultyLevel.EASY)
+            if(difficultyLevel == DIFFICULTY_LEVEL.EASY)
             {
                 return new EasyPlayingStrategy();
+            }
+            else if(difficultyLevel == DIFFICULTY_LEVEL.MED)
+            {
+                return  new MediumPlayingStrategy();
             }
             return new EasyPlayingStrategy();
         }

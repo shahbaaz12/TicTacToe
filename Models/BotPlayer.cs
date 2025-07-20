@@ -9,12 +9,12 @@ namespace TicTacToe.Models
     public class BotPlayer : Player
     {
         private PlayingStragegy playingStrategy;
-        private DifficultyLevel difficultyLevel;
+        private DIFFICULTY_LEVEL difficultyLevel;
 
-        public BotPlayer(int id, string name, PLAYER_TYPES pt, Symbol sym, DifficultyLevel dff) : base(id, name, pt, sym)
+        public BotPlayer(int id, string name, PLAYER_TYPES pt, Symbol sym, DIFFICULTY_LEVEL dff) : base(id, name, pt, sym)
         {
 
-            playingStrategy = PlayingStrategyFactory.GetPlayingDifficulty(difficultyLevel);
+            playingStrategy = PlayingStrategyFactory.GetPlayingDifficulty(dff);
             this.difficultyLevel = dff;
 
         }

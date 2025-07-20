@@ -33,6 +33,7 @@ namespace TicTacToe.Controllers
                 .SetName(name2)
                 .SetPlayerType(PLAYER_TYPES.BOT)
                 .SetPlayerSymbol(SYMBOLS.ZERO)
+                .SetDifficultyIfBot(DIFFICULTY_LEVEL.MED)
                 .Build();
 
             var players = new List<Player> { p1, p2 };

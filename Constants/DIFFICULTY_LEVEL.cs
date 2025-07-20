@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToe.Constants
 {
-    public enum DifficultyLevel
+    public enum DIFFICULTY_LEVEL
     {
         EASY,
         MED,
